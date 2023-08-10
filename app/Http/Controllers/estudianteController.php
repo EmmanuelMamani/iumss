@@ -8,6 +8,6 @@ class estudianteController extends Controller
 {
     //
     function perfil(){
-        return view('estudiante.perfil');
+        return view('perfil');
     }
 }
