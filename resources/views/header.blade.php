@@ -45,6 +45,11 @@
                     <span class="titulo_dato">CodSis:</span>
                     <span class="info_dato">201900400</span>
                 </div>
+                <button id="confirmar_info">
+                    <span>Confirmar informacion</span>
+                    <img src="{{asset('img/check_info.svg')}}" alt="">
+                </button>
+                <button id="incorrecto_info">Incorrecto</button>
             </div>
         </div>
         <div id="main">

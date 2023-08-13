@@ -102,6 +102,25 @@ body{
 #cont_menu>div>a:hover{
     background-color: #6112c9;
 }
+#confirmar_info{
+    background-color: #6C1DD0;
+    display: flex;
+    color: white;
+    border-radius: 20px;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#incorrecto_info{
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 20%;
+    color: #6112c9;
+    border: #6112c9 1px solid;
+    text-align: center;
+}
 @media (min-width: 821px){
     #contenido{
         display: flex;
