@@ -9,6 +9,7 @@ body{
 }
 #menu,#campana{
     width: 10%;
+    cursor: pointer;
 }
 #menu{
     margin-right: 80%;
@@ -64,6 +65,42 @@ body{
 }
 #main{
     background-color: #373636;
+    padding: 2%;
+    padding-top: 3vh;
+}
+#cont_menu{
+    position: relative;
+    transition: opacity 0.1s ease-in-out;
+}
+#cont_menu.clicked {
+    opacity: 1;
+}
+#cont_menu.close {
+    opacity: 0;
+}
+#cont_menu> div{
+    position: fixed;
+    z-index: 9999;
+    display: block;
+}
+#cont_menu>div>a{
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: #6C1DD0;
+    width: 170px;
+    padding: 3%;
+}
+#contrasenia{
+    border-radius: 20px 20px 0 0 ;
+    border: white 1px solid;
+}
+#salir{
+    border-radius: 0 0 20px 20px;
+    border: white 1px solid;
+}
+#cont_menu>div>a:hover{
+    background-color: #6112c9;
 }
 @media (min-width: 821px){
     #contenido{
@@ -74,5 +111,7 @@ body{
     }
     #main{
         width: 70%;
+        min-height: 100vh;
+        padding-top: 7vh;
     }
 }

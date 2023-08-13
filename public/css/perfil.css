@@ -1,0 +1,103 @@
+.diplomas{
+    border-radius: 20px;
+    background-color: #242424;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+.diplomas>h3{
+    color: white;
+    background-color: #7B34D6;
+    display: block;
+    padding: 1%;
+    border-radius: 0px 20px 0px 20px ;
+    padding-left: 5%;
+}
+.slick-carousel {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+  
+  .slick-slide {
+    margin: 0 5px;
+  }
+  .titulo_diploma{
+    text-align: center;
+    color: white;
+    background-color: #3D3A41;
+    border-radius: 0 0 20px 20px;
+    font-size: 14px;
+    padding: 1%;
+  }
+  .img_diploma{
+    border-radius: 20px 20px 0 0;
+  }
+  .slick-dots li button:before{
+    font-size: 30px;
+    color: #7B34D6;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #7B34D6;
+  }
+#cont_agregar{
+  position: relative;
+}
+#add{
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  background-color: #7B34D6;
+  border-radius: 50%;
+  width: 32px;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+#add.clicked {
+  transform: rotate(315deg);
+}
+#add.close {
+  transform: rotate(0deg);
+}
+#titulo{
+  position: fixed;
+  bottom: 35px;
+  right: -60px;
+  background-color: #7B34D6;
+  border-radius: 20px 20px 0 20px;
+  color: white;
+  padding: 0.5%;
+  width: 100px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#certificado{
+  position: fixed;
+  bottom: 35px;
+  right:-60px;
+  background-color: #7B34D6;
+  border-radius: 20px 0 20px 20px;
+  color: white;
+  padding: 0.5%;
+  width: 100px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  
+}
+#titulo.clicked {
+  transform: translateX(-120px) translateY(-20px);
+  opacity: 1;
+  
+}
+#titulo.close {
+  transform: translateX(120px) translateY(20px);
+  opacity: 0;
+  
+}
+#certificado.clicked {
+  transform: translateX(-120px) translateY(20px);
+  opacity: 1;
+  
+}
+#certificado.close {
+  transform: translateX(120px) translateY(-20px);
+  opacity: 0;
+}

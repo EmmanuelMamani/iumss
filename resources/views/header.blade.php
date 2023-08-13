@@ -16,6 +16,12 @@
                 <img src="{{asset('img/menu.svg')}}" id="menu">
                 <img src="{{asset('img/campana.svg')}}" id="campana">
             </header>
+            <div id="cont_menu" class="close">
+                <div>
+                    <a href="#" id="contrasenia">Cambiar contraseña</a>
+                    <a href="#" id="salir">Salir</a>
+                </div>
+            </div>
             <div id="contenedor_foto">
                 <img src="{{asset('img/perfil.jpg')}}" id="img_perfil">
                 <button id="cambiar_info">Cambiar info.</button>
@@ -44,7 +50,23 @@
         <div id="main">
             @yield('main')
         </div>
-        @yield('js')
     </div>
+    <script>
+        const menu = document.getElementById('menu');
+        const cont_menu = document.getElementById('cont_menu');
+        var option=0;
+        menu.onclick=function(){
+            if(option==0){
+                cont_menu.classList.add('clicked');
+                option=1
+                cont_menu.classList.remove('close');
+            }else{
+                cont_menu.classList.add('close');
+                option=0
+                cont_menu.classList.remove('clicked');
+            }
+        }
+    </script>
+    @yield('js')
 </body>
 </html>
