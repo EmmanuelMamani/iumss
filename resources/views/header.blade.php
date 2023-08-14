@@ -22,34 +22,36 @@
                     <a href="#" id="salir">Salir</a>
                 </div>
             </div>
-            <div id="contenedor_foto">
-                <img src="{{asset('img/perfil.jpg')}}" id="img_perfil">
-                <button id="cambiar_info">Cambiar info.</button>
-            </div>
-            <h2 class="text-2xl">Juan Perez Perez</h2>
-            <h3 class="text-xs font-light">201900400@est.umss.edu</h3>
-            <div id="info_per">
-                <h3>Informacion personal</h3>
-                <div class="datos_personales">
-                    <img src="{{asset('img/celular.svg')}}" alt="">
-                    <span class="titulo_dato">Celular:</span>
-                    <span class="info_dato">79793177</span>
+            <div id="perfil">
+                <div id="contenedor_foto">
+                    <img src="{{asset('img/perfil.jpg')}}" id="img_perfil">
+                    <a href="{{route('cambiar_info')}}" id="cambiar_info">Cambiar info.</a>
                 </div>
-                <div class="datos_personales">
-                    <img src="{{asset('img/ci.svg')}}" alt="">
-                    <span class="titulo_dato">CI:</span>
-                    <span class="info_dato">13752575</span>
+                <h2 class="text-2xl">Juan Perez Perez</h2>
+                <h3 class="text-xs font-light">201900400@est.umss.edu</h3>
+                <div id="info_per">
+                    <h3>Informacion personal</h3>
+                    <div class="datos_personales">
+                        <img src="{{asset('img/celular.svg')}}" alt="">
+                        <span class="titulo_dato">Celular:</span>
+                        <span class="info_dato">79793177</span>
+                    </div>
+                    <div class="datos_personales">
+                        <img src="{{asset('img/ci.svg')}}" alt="">
+                        <span class="titulo_dato">CI:</span>
+                        <span class="info_dato">13752575</span>
+                    </div>
+                    <div class="datos_personales">
+                        <img src="{{asset('img/universidad.svg')}}" alt="">
+                        <span class="titulo_dato">CodSis:</span>
+                        <span class="info_dato">201900400</span>
+                    </div>
+                    <button id="confirmar_info">
+                        <span>Confirmar informacion</span>
+                        <img src="{{asset('img/check_info.svg')}}" alt="">
+                    </button>
+                    <button id="incorrecto_info">Incorrecto</button>
                 </div>
-                <div class="datos_personales">
-                    <img src="{{asset('img/universidad.svg')}}" alt="">
-                    <span class="titulo_dato">CodSis:</span>
-                    <span class="info_dato">201900400</span>
-                </div>
-                <button id="confirmar_info">
-                    <span>Confirmar informacion</span>
-                    <img src="{{asset('img/check_info.svg')}}" alt="">
-                </button>
-                <button id="incorrecto_info">Incorrecto</button>
             </div>
         </div>
         <div id="main">

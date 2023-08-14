@@ -57,8 +57,8 @@
     </div>
     <div id="cont_agregar">
         <button><img src="{{asset('img/add.svg')}}" id="add"></button>
-        <button id="titulo" class="close">Titulo</button>
-        <button id="certificado" class="close">Certificado</button>
+        <a href="{{route('registrar_titulo')}}" id="titulo" class="close">Titulo</a>
+        <a href="{{route('registrar_certificado')}}" id="certificado" class="close">Certificado</a>
     </div>
 @endsection
 @section('js')

@@ -41,6 +41,7 @@
   }
 #cont_agregar{
   position: relative;
+  height: 1px;
 }
 #add{
   position: fixed;
@@ -69,6 +70,7 @@
   padding: 0.5%;
   width: 100px;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  text-align: center;
 }
 #certificado{
   position: fixed;
@@ -80,7 +82,7 @@
   padding: 0.5%;
   width: 100px;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  
+  text-align: center;
 }
 #titulo.clicked {
   transform: translateX(-120px) translateY(-20px);
